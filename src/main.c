@@ -2,5 +2,6 @@
 
 int main()
 {
-    return 0;
+    int ret = function1();
+    return ret;
 }
