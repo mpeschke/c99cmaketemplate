@@ -53,3 +53,9 @@ dkms.conf
 
 # CMake default build folder
 build/
+
+# MacOS systemfile
+**/.DS_Store
+
+# Qt config files
+CMakeLists.txt.user

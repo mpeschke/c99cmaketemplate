@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "CMake build and debug",
+            "name": "CMake build and debug GDB",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/src/app",
@@ -26,11 +26,11 @@
             "miDebuggerPath": "/usr/bin/gdb"
         },
         {
-            "name": "CMake build and unittest",
+            "name": "CMake build and unittest GDB",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/tests/App-Unit-Tests",
-            "args": [],
+            "args": ["1"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -45,6 +45,32 @@
             ],
             "preLaunchTask": "cmake",
             "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "CMake build and debug LLDB (CLang on MacOS)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/app",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "cmake",
+            "MIMode": "lldb"
+        },
+        {
+            "name": "CMake build and unittest LLDB (CLang on MacOS)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/tests/App-Unit-Tests",
+            "args": ["1"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "cmake",
+            "MIMode": "lldb"
         }
     ]
 }
