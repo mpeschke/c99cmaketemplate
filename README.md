@@ -5,7 +5,11 @@ A template for good practices to build a C (C99 standard) project, comprised of 
 ## Step 1: Dependencies
 
 A Linux distro  
-Git >= 2.17.1, CMake >= 3.5 and (GCC >= 7.5.0 or CLang 6.0.0)
+Git >= 2.17.1, CMake >= 3.5 and (GCC >= 7.5.0 or CLang >= 6.0.0)  
+or  
+MacOS  
+Git >= 2.17.1, CMake >= 3.5 and CLang >= 6.0.0  
+Read: https://code.visualstudio.com/docs/cpp/lldb-mi  
 
 Example for installing the dependencies on Ubuntu 18.04:  
 *#apt install -y git cmake make gcc clang*
